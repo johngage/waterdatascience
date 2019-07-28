@@ -23,4 +23,4 @@ Twenty reinvented toilet and omni-processor technologies and products rooted in 
 
 New international standards: [International Organization for Standardization 30500](https://www.iso.org/standard/72523.html), define the operational requirements for the reinvented toilet, as well as other existing and future stand-alone, non-sewered sanitation technologies.
 
-{% cite joy_gage_Science %}
+{ cite joy_gage_Science %}
