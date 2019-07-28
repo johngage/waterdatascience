@@ -15,4 +15,4 @@ Exploration depends upon rapid visualization, coupled with  descriptive statisti
 
 Prediction depends on executing models of the systems, coupled with machine learning techniques applied to actual data sets to calibrate the analytics.  Optimization techiques are applied in this adaptive model.
 
-{% bibliography %}
+{ bibliography %}
