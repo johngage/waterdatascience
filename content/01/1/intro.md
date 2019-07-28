@@ -24,4 +24,4 @@ This sequence of chapters seeks to:
 - present the array of solutions presented as of July, 2019
 - present the technical underpinnings of new tools in data science to allow analysis and design
 - present tools for global exchange of operational and cost data, to allow open sharing of best practices
-- {%cite joy_gage_Science %}
+- {cite joy_gage_Science %}
