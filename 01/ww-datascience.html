@@ -10,10 +10,10 @@
   <title>Distributed Non-Sewer Wastewater Treatment</title>
   <meta name="description" content="Data Science applied to Wastewater Engineering">
 
-  <link rel="canonical" href="https://johngage.github.io/waterdatascience/01/ww-datascience.html">
-  <link rel="alternate" type="application/rss+xml" title="Data Science in Wastewater Engineering" href="https://johngage.github.io/waterdatascience/feed.xml">
+  <link rel="canonical" href="http://0.0.0.0:4000/waterdatascience/01/ww-datascience.html">
+  <link rel="alternate" type="application/rss+xml" title="Data Science in Wastewater Engineering" href="http://0.0.0.0:4000/waterdatascience/feed.xml">
 
-  <meta property="og:url"         content="https://johngage.github.io/waterdatascience/01/ww-datascience.html" />
+  <meta property="og:url"         content="http://0.0.0.0:4000/waterdatascience/01/ww-datascience.html" />
 <meta property="og:type"        content="article" />
 <meta property="og:title"       content="Distributed Non-Sewer Wastewater Treatment" />
 <meta property="og:description" content="Data Science applied to Wastewater Engineering" />
@@ -25,13 +25,13 @@
   "@context": "http://schema.org",
   "@type": "NewsArticle",
   "mainEntityOfPage":
-    "https://johngage.github.io/waterdatascience/01/ww-datascience.html",
+    "http://0.0.0.0:4000/waterdatascience/01/ww-datascience.html",
   "headline":
     "Distributed Non-Sewer Wastewater Treatment",
   "datePublished":
-    "2019-07-27T23:53:53-05:00",
+    "2019-07-29T12:43:49-05:00",
   "dateModified":
-    "2019-07-27T23:53:53-05:00",
+    "2019-07-29T12:43:49-05:00",
   "description":
     "Data Science applied to Wastewater Engineering",
   "author": {
@@ -43,14 +43,14 @@
     "name": "Data 100 at UC Berkeley",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://johngage.github.io/waterdatascience",
+      "url": "http://0.0.0.0:4000/waterdatascience",
       "width": 60,
       "height": 60
     }
   },
   "image": {
     "@type": "ImageObject",
-    "url": "https://johngage.github.io/waterdatascience",
+    "url": "http://0.0.0.0:4000/waterdatascience",
     "height": 60,
     "width": 60
   }
@@ -120,7 +120,7 @@ initFunction = function(myfunc) {
 
   <!-- Define some javascript variables that will be useful in other javascript -->
   <script>
-    const site_basename = 'waterdatascience';
+    const site_basename = '/waterdatascience';
   </script>
 
   <!-- Add AnchorJS to let headers be linked -->
@@ -515,7 +515,7 @@ function addParamToInternalLinks(hub) {
   var links = document.querySelectorAll("a").forEach(function(link) {
     var href = link.href;
     // If the link is an internal link...
-    if (href.search("https://johngage.github.io/") !== -1 || href.startsWith('/') || href.search("127.0.0.1:") !== -1) {
+    if (href.search("http://0.0.0.0:4000") !== -1 || href.startsWith('/') || href.search("127.0.0.1:") !== -1) {
       // Assume we're an internal link, add the hub param to it
       var params = getJsonFromUrl(href);
       if (params !== false) {
@@ -711,7 +711,7 @@ initFunction(initQuery);
           href="/waterdatascience/intro1.html"
         >
           
-          Home
+          Overview
         </a>
 
         
@@ -757,7 +757,7 @@ initFunction(initQuery);
 
               <li class="c-sidebar__section">
                 <a class="c-sidebar__entry "
-                  href="/waterdatascience/01/1/intro2.html"
+                  href="/waterdatascience/01/1/intro.html"
                 >
                   
                     1.1
@@ -776,10 +776,29 @@ initFunction(initQuery);
 
               <li class="c-sidebar__section">
                 <a class="c-sidebar__entry "
-                  href="/waterdatascience/01/1/waste-treatment.html"
+                  href="/waterdatascience/01/1/2/statistical-techniques.html"
                 >
                   
                     1.2
+                  
+                  Statistical Techniques (from DS 100)
+                </a>
+
+                
+                
+
+              </li>
+              
+            
+              
+              
+
+              <li class="c-sidebar__section">
+                <a class="c-sidebar__entry "
+                  href="/waterdatascience/01/1/waste-treatment.html"
+                >
+                  
+                    1.3
                   
                   Previous Research Investments
                 </a>
@@ -798,9 +817,28 @@ initFunction(initQuery);
                   href="/waterdatascience/01/2/why-research-platform.html"
                 >
                   
-                    1.3
+                    1.4
                   
                   Why Build a Research Platform?
+                </a>
+
+                
+                
+
+              </li>
+              
+            
+              
+              
+
+              <li class="c-sidebar__section">
+                <a class="c-sidebar__entry "
+                  href="/waterdatascience/01/2/biblio.html"
+                >
+                  
+                    1.5
+                  
+                  Research Bibliography
                 </a>
 
                 
@@ -1182,39 +1220,37 @@ initFunction(initQuery);
 
 <h2 id="data-science">Data Science</h2>
 <ul>
-  <li>drawing useful conclusions from large and diverse data
-sets through exploration, prediction, and inference.</li>
+  <li>Systematic techniques to draw useful conclusions from large and diverse data
+sets. Four main areas: <strong>analytic model design</strong>,  <strong>exploration</strong>, <strong>prediction</strong>, and <strong>inference</strong>.</li>
 </ul>
 
 <h2 id="wastewater-data-science">Wastewater Data Science</h2>
 <ul>
-  <li>utilizes analytic knowledge,
-encapsulated in methods of numerical linear algebra and differential equations, and
-empirical data, captured from operating waste water treatment systems, to build and refine
-models of actual operating systems.</li>
+  <li><strong>Model design</strong>: builds mathematical models of each element of a coupled system: physical, chemical, hydrodynamical and biological.
+Uses methods of numerical linear algebra, differential equations, and chemical and mechanical engineering.</li>
+  <li><strong>Exploration</strong>: Acquires empirical data from operating waste water treatment systems. Used to calibrate and refine analytical models of actual operating systems, and for day-to-day operations and maintenance.</li>
 </ul>
 
-<p>Exploration depends upon rapid visualization, coupled with  descriptive statistics drawn from data sets.</p>
+<p>Exploration of these data sets depends upon rapid visualization, coupled with  descriptive statistics drawn from data sets to build and refine intuition about actual functional relationships, e.g., between pH, alkalinity, temperature, and biomass formation.</p>
 
-<p>Prediction depends on executing models of the systems, coupled with machine learning techniques applied to actual data sets to calibrate the analytics.  Optimization techiques are applied in this adaptive model.</p>
+<ul>
+  <li><strong>Prediction</strong> depends on executing models of the systems, coupled with machine learning techniques applied to actual data sets to calibrate the analytics.  Optimization techiques are applied in this adaptive model allow dynamic improvement.</li>
+  <li><strong>Inference</strong> from observed data allows accurate estimation of probabilities and error bars.</li>
+</ul>
 
-<ol class="bibliography"><li><span id="holdgraf_evidence_2014">Holdgraf, C. R., de Heer, W., Pasley, B. N., &amp; Knight, R. T. (2014). Evidence for Predictive Coding in Human Auditory Cortex. In <i>International Conference on Cognitive Neuroscience</i>. Brisbane, Australia, Australia: Frontiers in Neuroscience.</span></li>
-<li><span id="holdgraf_rapid_2016">Holdgraf, C. R., de Heer, W., Pasley, B. N., Rieger, J. W., Crone, N., Lin, J. J., … Theunissen, F. E. (2016). Rapid tuning shifts in human auditory cortex enhance speech intelligibility. <i>Nature Communications</i>, <i>7</i>(May), 13654. https://doi.org/10.1038/ncomms13654</span></li>
-<li><span id="holdgraf_portable_2017">Holdgraf, C. R., Culich, A., Rokem, A., Deniz, F., Alegro, M., &amp; Ushizima, D. (2017). Portable learning environments for hands-on computational instruction using container-and cloud-based technology to teach data science. In <i>ACM International Conference Proceeding Series</i> (Vol. Part F1287). https://doi.org/10.1145/3093338.3093370</span></li>
-<li><span id="holdgraf_encoding_2017">Joy, W., &amp; Gage, J. (2017). Encoding and decoding models in cognitive electrophysiology. <i>Frontiers in Systems Neuroscience</i>, <i>11</i>. https://doi.org/10.3389/fnsys.2017.00061</span></li>
-<li><span id="ruby">Flanagan, D., &amp; Matsumoto, Y. (2008). <i>The Ruby Programming Language</i>. O’Reilly Media.</span></li></ol>
+<p>This book describes the aspects of waste water engineering applicable to non-sewered sanitation systems: new toilet systems, new septic tank processing technologies, sludge processing and reclamation of nutrients and new testing and monitoring technologies. New techniques include biome specification utilising antibody probes, polymerase chain reaction genetic analysis, and multi-site Affymetric species identification.</p>
 
               <nav class="c-page__nav">
   
     
     <a id="js-page__nav__prev" class="c-page__nav__prev" href="/waterdatascience/intro1.html">
-      〈 <span class="u-margin-right-tiny"></span> Home
+      〈 <span class="u-margin-right-tiny"></span> Overview
     </a>
   
 
   
     
-    <a id="js-page__nav__next" class="c-page__nav__next" href="/waterdatascience/01/1/intro2.html">
+    <a id="js-page__nav__next" class="c-page__nav__next" href="/waterdatascience/01/1/intro.html">
       Introduction <span class="u-margin-right-tiny"></span> 〉
     </a>
   
